@@ -14,4 +14,4 @@ This project is intended to give you some practice in using Github/Git Classroom
 Tasks 
 1. test
 
-You will have two deadlines, or commits to meet on 8/25 and 8/30
+You will have two deadlines, or commits to meet on 8/25 and 8/30 edit
