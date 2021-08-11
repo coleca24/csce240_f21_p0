@@ -5,7 +5,8 @@
 std::string genHelloWorld(); 
 int myAdd(int, int);
 
- 
+
+
 TEST(HelloTest, correctStringCreated) {
      EXPECT_EQ(genHelloWorld(), "Hello World!");
 }
