@@ -20,7 +20,8 @@ int main() {
      int sum = myAdd(1,1);
      std::cout << hello << std::endl; 
      std::cout << sum << std::endl;  
-     return 0;
+     ::testing::InitGoogleTest(&argc, argv);
+     return RUN_ALL_TESTS();
 }
 
 std::string genHelloWorld() {
