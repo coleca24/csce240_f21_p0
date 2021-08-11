@@ -15,7 +15,7 @@ TEST(HelloTest, iCanAdd) {
      EXPECT_EQ(myAdd(1,1), 2); 
 }
 
-int main() {
+int main(int argc, char** argv) {
      std::string hello = genHelloWorld(); 
      int sum = myAdd(1,1);
      std::cout << hello << std::endl; 
