@@ -1,14 +1,29 @@
 // Copyright 2021 Casey Anne Cole
 #include <gtest/gtest.h>
+#include <iostream> 
 
-// Demonstrate some basic assertions.
-TEST(HelloTest, BasicAssertions) {
-     // Expect two strings not to be equal.
-     EXPECT_STRNE("hello", "world");
-     // Expect equality.
-     EXPECT_EQ(7 * 6, 42);
+std::string genHelloWorld(); 
+int myAdd(int, int); 
+TEST(HelloTest, correctStringCreated) {
+     EXPECT_EQ(genHelloWorld(), "Hello World!");
 }
 
-int main(){
-	return 0;
+TEST(HelloTest, iCanAdd) {
+     EXPECT_EQ(myAdd(1,1), 2); 
+}
+
+int main() {
+     std::string hello = genHelloWorld(); 
+     int sum = myAdd(1,1);
+     std::cout << hello << std::endl; 
+     std::cout << sum << std::endl;  
+     return 0;
+}
+
+std::string genHelloWorld() {
+     return "Hello World!"; 
+}
+
+int myAdd(int num1, int num2) {
+     return num1 + num2;
 }
