@@ -1,3 +1,4 @@
+// Copyright 2021 Casey Anne Cole
 #include <gtest/gtest.h>
 
 // Demonstrate some basic assertions.
