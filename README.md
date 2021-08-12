@@ -68,41 +68,52 @@ And that is FINE for now, you will fix those in the second commit (below).
 *(Remember this should also include all of the tasks from Commit #1)*
 
 Okay, let's fix that red x. In this commit, you will be implementing the functions in the helloworld.cpp and getting a feel for the style and code checkers that I have implemented as actions that trigger every time you push in GitHub. To see all the actions, navigate to the Actions tab in GitHub: 
+
 <img width="920" alt="Snip_Actions" src="https://user-images.githubusercontent.com/3376451/129252670-a6bc0687-8d37-4849-9a1d-1bd99bef765e.PNG">
 Notice there are 2 workflows (Test and Code Checker). 
 
 Assuming you have already completed Commit #1, then you should see something like this in the list of Workflow Runs: 
+
 <img width="680" alt="Snip_failedChecks" src="https://user-images.githubusercontent.com/3376451/129253333-a04a113e-0b3e-4af7-8083-c6e5118b2e88.PNG">
 
 Let's start with the Test workflow. What this workflow is doing is performing some unit testing on your code with the Google test suite (gtest). If you open up the helloworld.cpp, you can actually see the testing conditions. Do not edit these. Later on in the semester we will learn more about these and you will implement some yourself.  
 
 Click on the workflow run that says Test underneath it (second one in this picture). 
+
 <img width="680" alt="Snip_failedChecks" src="https://user-images.githubusercontent.com/3376451/129253562-cb9e14e2-a6ab-484d-926d-2bd18d7d9235.PNG">
 
 You should now see something like this: 
+
 <img width="922" alt="Snip_Test_build" src="https://user-images.githubusercontent.com/3376451/129253737-51e57288-a5ac-4dd7-8671-e124e58e78e3.PNG">
 
 Click on the Build. Notice that the only part where your code failed was in the Test tab.  
+
 <img width="693" alt="Snip_Test_build_TestCircled" src="https://user-images.githubusercontent.com/3376451/129253803-d856bb6e-2f62-4314-92af-950b843e3699.PNG">
 
 Click on the Test tab. We are going to walk through these tests in a lot of detail (in future assignments I will not be as verbose). 
 
 The first output that you should see is test1 (there is a little output before that, but the main output for me started on line 14 - see below). This test ran a unit test called HelloTest.correctStringCreated (highlighted in yellow below). This test is testing the output of your genHelloWorld() function. The expected value of this function was "Hello World!" (underlined in blue) but the output of your function was "" (underlined in red). Therefore, you failed that test. To fix this, you will have to change the return statement in the genHelloWorld() function so that it returns was is expected! 
+
 <img width="596" alt="Snip_Test1Fail" src="https://user-images.githubusercontent.com/3376451/129254244-3d3bf7ae-0536-455a-b82c-83a06eb35d9d.PNG">
 
 A little further down you will see the output of another test (HelloTest.iCanAdd). This one is testing the output of your myAdd(int,int) function. The expected output when (1,1) is sent to this function should be 2 (underlined in blue), but your script is returning 0 (underlined in red). Therefore, you failed and need to update the output of the script to return the sum of the two numbers. Note: DO NOT JUST RETURN 2 to get it to pass the test.... return the sum of the two parameters. 
+
 <img width="498" alt="Snip_Test2Fail" src="https://user-images.githubusercontent.com/3376451/129254589-892b488d-440e-404b-b4f4-16b5a59c680f.PNG">
 
 At the bottom of this output, you will also find a summary of all the tests that passed and failed (this will come in handy later when you have a bunch of test cases). 
+
 <img width="584" alt="Snip_AllFailed" src="https://user-images.githubusercontent.com/3376451/129255062-14276dea-4095-444d-9687-e70ca175f11a.PNG">
 
 Now, let's talk about the style checker (back in the Actions tab, workflow runs, first one now that says style checker underneath). 
+
 <img width="680" alt="Snip_failedChecks" src="https://user-images.githubusercontent.com/3376451/129255482-8fb21ab2-4bae-460a-bb48-d6ef4a6fe684.PNG">
 
 You should now see something like this with an option of cpplint. Cpplint (https://github.com/cpplint/cpplint) is a tool written in python that checks all of your code against the Google Style Sheet for C++ (https://google.github.io/styleguide/cppguide.html). Full disclosure, you are going to HATE this at first (or always), but it is a good way to enforce readable, consistant coding practices. So... deal with it? 
+
 <img width="937" alt="Snip_style_cpplint" src="https://user-images.githubusercontent.com/3376451/129256271-83d7381a-e808-4116-8118-c0d129df0e39.PNG">
 
 Click on cpplint. This will give you a list of all the errors that cpplint found. You will have to look up a lot of them at first, but once you have done this enough, you will get used to it and know immediately what the errors mean. A lot of them will be obvious. For example, there are two errors in the code that I have pushed (yours may be different). My errors are "Line ends in whitespace". This literally means that there is an uneeded white space at the end of line 1 (helloworld.cpp:**1**) and line 2 (helloworld.cpp:**2**). This may seem trivial, but in adding white space at the end of each line, you are inflating the size of your files. 
+
 <img width="943" alt="Snip_cpplintErrors" src="https://user-images.githubusercontent.com/3376451/129256434-25695c28-3911-4f3a-a34a-7c034df76d21.PNG">
 
 Now, to fix the code, do the following:
