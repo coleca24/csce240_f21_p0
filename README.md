@@ -57,6 +57,9 @@ git push
 GitHub will ask for your user name and password (this is the one that you set up when you made your GitHub account - NOT your USCID). Now your code should be pushed up to GitHub and you should be able to see your message on the GitHub website. 
 ![image](https://user-images.githubusercontent.com/3376451/129236668-8f98a580-dad6-47e5-92d4-e21bbdbd9aec.png)
 
+That's it! For those of you freightened by red 'x''s - yes you will see this:
+![image](https://user-images.githubusercontent.com/3376451/129236931-dca6f72e-2ed8-403e-bf62-533531acea2f.png)
+And that is FINE for now, you will fix those in the second commit (below). 
 
 ---
 
