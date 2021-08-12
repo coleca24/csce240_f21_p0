@@ -19,7 +19,7 @@ Main outcomes:
 Commit #1 (Due 8/25/21 at Midnight) Tasks: 
 1. Clone the repository
 2. Edit the helloworld.cpp file 
-3. Change the header so that it includes your name, section, email and a short message. For example, mine would look something like:
+3. Change the header so that it includes your name, section, email and a short message. Do not modify anything inside of the DO NOT MODIFY START and END sections. For example, mine would look something like:
 ```
 // Author: Casey Cole
 // Email: coleca@cse.sc.edu
@@ -66,6 +66,8 @@ And that is FINE for now, you will fix those in the second commit (below).
 Final Commit (Due 8/30/21 at Midnight) Tasks: 
 
 *(Remember this should also include all of the tasks from Commit #1)*
+
+Okay, let's fix that red x. In this commit, you will be implementing the functions in the helloworld.cpp and getting a feel for the style and code checkers that I have implemented as actions in GitHub. 
 1. Do something
 2. Do something else
 
