@@ -1,4 +1,4 @@
-# CSCE 240 Fall 2021 Project 0
+# CSCE 240 Fall 2021 Project 0 - 10 pts
 ---
 Repo Name: csce240_f21_p0
 
@@ -16,7 +16,7 @@ Main outcomes:
 - Become familiar with interpreting Google Test output
 - Write basic C++ code
 
-Commit #1 (Due 8/25/21 at Midnight) Tasks: 
+## Commit #1 (Due 8/25/21 at Midnight) Tasks: 
 1. Clone the repository
 2. Edit the helloworld.cpp file 
 3. Change the header so that it includes your name, section, email and a short message. Do not modify anything inside of the DO NOT MODIFY START and END sections. For example, mine would look something like:
@@ -63,7 +63,7 @@ And that is FINE for now, you will fix those in the second commit (below).
 
 ---
 
-Final Commit (Due 8/30/21 at Midnight) Tasks: 
+## Final Commit (Due 8/30/21 at Midnight) Tasks: 
 
 *(Remember this should also include all of the tasks from Commit #1)*
 
@@ -99,7 +99,11 @@ At the bottom of this output, you will also find a summary of all the tests that
 Now, let's talk about the style checker (back in the Actions tab, workflow runs, first one now that says style checker underneath). 
 <img width="680" alt="Snip_failedChecks" src="https://user-images.githubusercontent.com/3376451/129255482-8fb21ab2-4bae-460a-bb48-d6ef4a6fe684.PNG">
 
+You should now see something like this with an option of cpplint. Cpplint (https://github.com/cpplint/cpplint) is a tool written in python that checks all of your code against the Google Style Sheet for C++ (https://google.github.io/styleguide/cppguide.html). Full disclosure, you are going to HATE this at first (or always), but it is a good way to enforce readable, consistant coding practices. So... deal with it? 
+<img width="937" alt="Snip_style_cpplint" src="https://user-images.githubusercontent.com/3376451/129256271-83d7381a-e808-4116-8118-c0d129df0e39.PNG">
 
+Click on cpplint. This will give you a list of all the errors that cpplint found. You will have to look up a lot of them at first, but once you have done this enough, you will get used to it and know immediately what the errors mean. A lot of them will be obvious. For example, there are two errors in the code that I have pushed (yours may be different). My errors are "Line ends in whitespace". This literally means that there is an uneeded white space at the end of line 1 (helloworld.cpp:**1**) and line 2 (helloworld.cpp:**2**). This may seem trivial, but in adding white space at the end of each line, you are inflating the size of your files. 
+<img width="943" alt="Snip_cpplintErrors" src="https://user-images.githubusercontent.com/3376451/129256434-25695c28-3911-4f3a-a34a-7c034df76d21.PNG">
 
 Now, to fix the code, do the following:
 1. Complete the genHelloWorld() function such that it returns the string "Hello World!" Make sure that it passes test 1 in the Test Action (explained above). 
@@ -112,8 +116,32 @@ OR...
 
 You can do it all manually on your own end before pushing your code (please note that you will still need to push your code when you are finished to get a grade).
 
+### How to do this manually:
+Option 1: Using cmake
+```
+cd /folder/where/your/code/is
+cmake .
+```
+At this point, if you `ls` then you will see a bunch of other files (ignore for now) and a Makefile. Now run the following:
+```
+make 
+```
+If you `ls` again, you will now see even more! Importantly, a helloworld executable. If you run this `./helloworld` you will see output of a blank line and then a zero (these came from those cout statements in the main). You will also see the output of the test cases. 
+
+You can then edit the code and test again (you will have to make again each time).  
+```
+make
+./hellotest
+```
+
+To test for style, run: 
+```
+cpplint --recursive helloworld.cpp
+```
+
+Option 2: Individual commands
 
 ---
-Other considerations:
-- 
-- 
+Grading:
+- Commit #1 - 3pts (1 pt for a commit of any kind, 2pts for correctly changing the header)
+- Commit #2 (final commit) - 7 pts (1 pt for a commit of any kind, 2 pts test 1 passes, 2 pts test 2 passes, 2 pts Sytle Checker no errors)
