@@ -16,13 +16,13 @@ FetchContent_MakeAvailable(googletest)
 enable_testing()
 
 add_executable(
-	  hello_test
-	  hello_test.cpp
+	  helloworld
+	  helloworld.cpp
 )
 target_link_libraries(
-	hello_test
+	helloworld
 	gtest_main
 )
 
 include(GoogleTest)
-gtest_discover_tests(hello_test)
+gtest_discover_tests(helloworld)
