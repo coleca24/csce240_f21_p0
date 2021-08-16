@@ -3,8 +3,8 @@
 Repo Name: csce240_f21_p0
 
 Due Dates: 
-- Commit 1: 8/25/21 at Midnight
-- Final Commit: 8/30/21 at Midnight
+- Commit #1: 8/25/21 at Midnight
+- Commit #2 (final): 8/30/21 at Midnight
 ---
 
 ## Welcome to CSCE 240! 
@@ -63,7 +63,7 @@ And that is FINE for now, you will fix those in the second commit (below).
 
 ---
 
-## Final Commit (Due 8/30/21 at Midnight) Tasks: 
+## Commit #2 (final) (Due 8/30/21 at Midnight) Tasks: 
 
 *(Remember this should also include all of the tasks from Commit #1)*
 
@@ -151,6 +151,18 @@ cpplint --recursive helloworld.cpp
 ```
 
 Option 2: Individual commands
+
+To compile the code and create the executable: 
+```
+g++ helloworld.cpp -lgtest -lpthread
+```
+Note that the lgtest is the library needed for the google test suite and lpthread is the library for pthreads (google test will use these). There are instructions for installing google test on your given OS on the Dropbox site. Pthreads should already be there (let me know if you get an error that would indicate otherwise). 
+
+Then to run your code: 
+```
+./a.out
+```
+You will get the output (blank line and then 2) followed by the google testing summary. 
 
 ---
 Grading:
