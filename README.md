@@ -19,9 +19,12 @@ Main outcomes:
 **To accept this assignment, please follow the CSCE240_Git&GitClassroom guide on dropbox.cse.sc.edu in the Guides folder. This is show you how to create a GitHub account, join the classroom and accept this assignment such that it will automatically be created in your repositories**
 
 ## Commit #1 (Due 8/25/21 at Midnight) Tasks: 
-1. Clone the repository
-2. Edit the helloworld.cpp file 
-3. Change the header so that it includes your name, section, email and a short message. Do not modify anything inside of the DO NOT MODIFY START and END sections. For example, mine would look something like:
+1. Clone the repository (should be something like the following - Will NOT be identical... you will have a different username than me). If this part is confusing, it might be because you have not accepted the assignment yet (see the CSCE240_Git&GitClassroom guide to do so). 
+```
+git clone https://github.com/compsci-usc/csce-240-project-0-coleca-test.git
+```
+3. Edit the helloworld.cpp file 
+4. Change the header so that it includes your name, section, email and a short message. Do not modify anything inside of the DO NOT MODIFY START and END sections. For example, mine would look something like:
 ```
 // Author: Casey Cole
 // Email: coleca@cse.sc.edu
