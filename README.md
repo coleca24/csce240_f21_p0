@@ -16,6 +16,8 @@ Main outcomes:
 - Become familiar with interpreting Google Test output
 - Write basic C++ code
 
+**To accept this assignment, please follow the CSCE240_Git&GitClassroom guide on dropbox.cse.sc.edu in the Guides folder. This is show you how to create a GitHub account and accept this assignment such that it will automatically be created in your repositories**
+
 ## Commit #1 (Due 8/25/21 at Midnight) Tasks: 
 1. Clone the repository
 2. Edit the helloworld.cpp file 
