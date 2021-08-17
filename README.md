@@ -23,8 +23,8 @@ Main outcomes:
 ```
 git clone https://github.com/compsci-usc/csce-240-project-0-coleca-test.git
 ```
-3. Edit the helloworld.cpp file 
-4. Change the header so that it includes your name, section, email and a short message. Do not modify anything inside of the DO NOT MODIFY START and END sections. For example, mine would look something like:
+2. Edit the helloworld.cpp file 
+3. Change the header so that it includes your name, section, email and a short message. Do not modify anything inside of the DO NOT MODIFY START and END sections. For example, mine would look something like:
 ```
 // Author: Casey Cole
 // Email: coleca@cse.sc.edu
