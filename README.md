@@ -8,7 +8,7 @@ Due Dates:
 ---
 
 ## Welcome to CSCE 240! 
-In this first assignment we will aim to get some practice in the mechanics of this class. One good programming technique that we will practice is iterative processing. The basic concept here is that a good programmer should not code everything all at once, but instead break a task into smaller tasks and tackle those individually. The danger of coding everything at once is that if it fails a build then it can be a pain to debug. However, if you practice iterative programming then the amount of code to debug is more managable. To enforce this iterative process, each assignment will be broken up into several deadlines (or commits). Each commit will build on all of the previous commits and have thier own associated test cases. 
+In this first assignment we will aim to get some practice in the mechanics of this class. One good programming technique that we will practice is iterative programming. The basic concept here is that a good programmer should not code everything all at once, but instead break a task into smaller tasks and tackle those individually. The danger of coding everything at once is that if it fails a build then it can be a pain to debug. However, if you practice iterative programming then the amount of code to debug is more managable. To enforce this iterative process, each assignment will be broken up into several deadlines (or commits). Each commit will build on all of the previous commits and have thier own associated test cases. 
 
 Main outcomes:
 - Become familiar with using Git/Github/Github Classroom
