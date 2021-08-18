@@ -1,4 +1,4 @@
-// Author: <Enter name here> 
+// Author: <Enter name here>test 
 // Email: <Enter email here> 
 // Section #: <Enter section here>
 // Copyright 2021 <Enter Name Here>
@@ -36,5 +36,5 @@ std::string genHelloWorld() {
 
 // TODO(student) Make this function return the sum of the two numbers passed in
 int myAdd(int num1, int num2) {
-     return 0;
+     return num1 + num2;
 }
